@@ -1,4 +1,4 @@
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -53,8 +53,19 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
+              className="border-accent text-accent hover:bg-accent/10 gap-2"
+              asChild
+            >
+              <a href="/resume.pdf" download="Your-Name-Resume.pdf">
+                <Download className="w-4 h-4" />
+                Download CV
+              </a>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
               onClick={() => scrollToSection("contact")}
-              className="border-accent text-accent hover:bg-accent/10"
+              className="border-border hover:bg-secondary/50"
             >
               Get In Touch
             </Button>

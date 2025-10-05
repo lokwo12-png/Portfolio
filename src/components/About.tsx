@@ -1,5 +1,6 @@
-import { Code2, Lightbulb, Rocket } from "lucide-react";
+import { Code2, Lightbulb, Rocket, Download } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const About = () => {
   const highlights = [
@@ -45,6 +46,16 @@ const About = () => {
                 When I'm not coding, you'll find me exploring new technologies, contributing to open source, 
                 or sharing knowledge with the developer community.
               </p>
+              <Button
+                size="lg"
+                className="bg-gradient-primary hover:shadow-glow transition-all duration-300 gap-2"
+                asChild
+              >
+                <a href="/resume.pdf" download="Your-Name-Resume.pdf">
+                  <Download className="w-5 h-5" />
+                  Download My CV
+                </a>
+              </Button>
             </div>
 
             <div className="grid gap-6 animate-fade-in">
