@@ -1,6 +1,7 @@
 import { Code2, Lightbulb, Rocket, Download } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import profileImage from "@/assets/profile.jpg";
 
 const About = () => {
   const highlights = [
@@ -34,6 +35,16 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6 animate-slide-in">
+              <div className="flex justify-center md:justify-start mb-6">
+                <div className="relative w-48 h-48 rounded-2xl overflow-hidden border-4 border-primary/50 shadow-glow hover:shadow-accent-glow transition-all duration-300">
+                  <img 
+                    src={profileImage} 
+                    alt="Profile" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I'm a passionate full-stack developer with a love for creating elegant solutions to complex problems. 
                 With expertise in modern web technologies, I transform ideas into reality through code.

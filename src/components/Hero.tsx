@@ -1,5 +1,6 @@
 import { ArrowDown, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profileImage from "@/assets/profile.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -20,6 +21,16 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in-up">
+          <div className="flex justify-center mb-6">
+            <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-primary shadow-glow animate-float">
+              <img 
+                src={profileImage} 
+                alt="Profile" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          
           <div className="inline-block">
             <span className="text-accent text-sm font-semibold tracking-wider uppercase mb-4 inline-block animate-slide-in">
               Welcome to my portfolio
